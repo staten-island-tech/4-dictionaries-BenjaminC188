@@ -6,26 +6,25 @@
 print(student['name'])"""
 
 best_buy_items = [
-item = {
+{
     'name': "TV",
     'price': 429.99,
     'department': "Electronics",
     'description': "A big screen."
 }
 
-item = {
+{
     'name': "IPhone",
     'price': 1199.99,
     'department': "Electronics",
     'description': "A small screen."
 }
 
-item = {
+{
     'name': "IPad",
     'price': 254.99,
     'department': "Electronics",
     'description': "A medium screen."
 }
 ]
-
 print(best_buy_items[0] ["name"])
