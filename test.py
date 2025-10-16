@@ -5,6 +5,7 @@
 }
 print(student['name'])"""
 
+best_buy_items = [
 item = {
     'name': "TV",
     'price': 429.99,
@@ -25,5 +26,6 @@ item = {
     'department': "Electronics",
     'description': "A medium screen."
 }
+]
 
-best_buy_items[0] ["name"]
+print(best_buy_items[0] ["name"])
