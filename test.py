@@ -1,11 +1,4 @@
-"""student = {
-    'name': 'Cadee',
-    'age' : 15,
-    'grades' : (80,90,100)
-}
-print(student['name'])"""
-
-best_buy_items = [
+best_buy_items = ()
 {
     'name': "TV",
     'price': 429.99,
@@ -26,5 +19,22 @@ best_buy_items = [
     'department': "Electronics",
     'description': "A medium screen."
 }
-]
-print(best_buy_items[0] ["name"])
+def cart():
+    cart = []
+    print(best_buy_items ['name'] ['price'] ['department'] ['description'])
+    print("purchase a item")
+    while input == ['TV']:
+        print(best_buy_items[0])
+        print("Do you want to add this item to cart?")
+    if input == 'yes':
+        cart.append(best_buy_items[0])
+    elif input == ['IPhone']:
+        print(best_buy_items[1])
+        print("Do you want to add this item to cart?")
+    if input == 'yes':
+        cart.append(best_buy_items[1])
+    elif input == ['IPad']:
+        print(best_buy_items[2])
+        print("Do you want to add this item to cart?")
+    if input == 'yes':
+        cart.append(best_buy_items[2])
