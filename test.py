@@ -1,17 +1,17 @@
-best_buy_items = ()
+best_buy_items = [
 {
     'name': "TV",
     'price': 429.99,
     'department': "Electronics",
     'description': "A big screen."
-}
+},
 
 {
     'name': "IPhone",
     'price': 1199.99,
     'department': "Electronics",
     'description': "A small screen."
-}
+},
 
 {
     'name': "IPad",
@@ -19,8 +19,19 @@ best_buy_items = ()
     'department': "Electronics",
     'description': "A medium screen."
 }
-def cart():
+]
+
+"""for index, item in enumerate(best_buy_items):
+    print(index, ":", item['name'])"""
+
+for index, item in enumerate(best_buy_items):
+    print(index, ":", item['name'])
+    print("Purchase an item")
+print(best_buy_items[] ['name'])
+
+"""def cart():
     cart = []
+    Total = ['price']
     print(best_buy_items ['name'] ['price'] ['department'] ['description'])
     print("purchase a item")
     while input == ['TV']:
@@ -38,3 +49,5 @@ def cart():
         print("Do you want to add this item to cart?")
     if input == 'yes':
         cart.append(best_buy_items[2])
+    elif input == ['Done']:
+        print (cart) and (Total)"""
