@@ -1,4 +1,4 @@
-best_buy_items = [
+"""best_buy_items = [
 {
     'name': "TV",
     'price': 429.99,
@@ -19,16 +19,13 @@ best_buy_items = [
     'department': "Electronics",
     'description': "A medium screen."
 }
-]
+]"""
 
 """for index, item in enumerate(best_buy_items):
     print(index, ":", item['name'])"""
 
-for index, item in enumerate(best_buy_items):
-    print(index, ":", item['name'])
-    print("Purchase an item")
-print(best_buy_items[] ['name'])
-
+"""for index, item in enumerate(best_buy_items):
+    print(index, ":", item['name'])"""
 """def cart():
     cart = []
     Total = ['price']
@@ -51,3 +48,33 @@ print(best_buy_items[] ['name'])
         cart.append(best_buy_items[2])
     elif input == ['Done']:
         print (cart) and (Total)"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def machine(a, b, c):
+    q = int(input("Number of quarters 1- 1000"))
+    a = 0
+    b = 0
+    c = 0
+
+    while q >= 1:
+        
+
+
+
