@@ -21,33 +21,38 @@ best_buy_items = [
 }
 ]
 
-        
 
-for index, item in enumerate(best_buy_items):
-        print(index, ":", item)
-while best_buy_items:
-        purchase = input("Purchase a item:")
-        cart = []
-        totalprice = []
-        cart.append(purchase)
-        if input == 'TV':
-            print(cart, totalprice + 429.99)
-        elif input == 'IPhone':
-            print(cart, totalprice + 1199.99)
-        elif input == 'IPad':
-            print(cart, totalprice + 254.99)
-        elif input == 'continue':
-              print('purchase another item.')
-        elif input == 'done':
-              print(cart and totalprice)
-              break
-        else:
-              print("redo")
-        if input == 'continue':
-              print(input("Do you want to buy another item?"))
-        elif input == 'done':
-              print(cart and totalprice)
-              
+cart = []
+totalprice = 0
+while True:
+    purchase = input("Purchase an item (TV, IPhone, IPad): ")
+
+    if purchase == "TV":
+        item = best_buy_items[0]
+        cart.append(item)
+        totalprice += item["price"]
+        print("You added:", item)
+    elif purchase == "IPhone":
+        item = best_buy_items[1]
+        cart.append(item)
+        totalprice += item["price"]
+        print("You added:", item)
+    elif purchase == "IPad":
+        item = best_buy_items[2]
+        cart.append(item)
+        totalprice += item["price"]
+        print("You added:", item)
+    elif purchase == "continue":
+        print("Purchase another item.")
+        continue
+    elif purchase == "done":
+        print("Items in cart:")
+        for item in cart:
+            print(item)
+        print("Total price:", totalprice)
+        break
+    else:
+        print("Invalid input. Try again.")
               
 
             
