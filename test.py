@@ -21,12 +21,14 @@ best_buy_items = [
 }
 ]
 
+"""for index, item in enumerate(best_buy_items):
+    print(index, ":", item['name'])"""
 
+print(best_buy_items)
 cart = []
 totalprice = 0
-while True:
-    purchase = input("Purchase an item (TV, IPhone, IPad): ")
-
+while best_buy_items:
+    purchase = input("Purchase an item TV, IPhone or IPad")
     if purchase == "TV":
         item = best_buy_items[0]
         cart.append(item)
@@ -49,10 +51,10 @@ while True:
         print("Items in cart:")
         for item in cart:
             print(item)
-        print("Total price:", totalprice)
+        print("Total price of items:", totalprice)
         break
     else:
-        print("Invalid input. Try again.")
+        print("Item not found.")
               
 
             
