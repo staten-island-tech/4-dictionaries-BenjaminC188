@@ -27,34 +27,34 @@ best_buy_items = [
 print(best_buy_items)
 cart = []
 totalprice = 0
+purchase = input("Purchase an item TV, IPhone or IPad")
 while best_buy_items:
-    purchase = input("Purchase an item TV, IPhone or IPad")
     if purchase == "TV":
         item = best_buy_items[0]
-        cart.append(item)
+        cart.append(item['name'])
         totalprice += item["price"]
-        print("You added:", item)
+        print("you added:", item)
     elif purchase == "IPhone":
         item = best_buy_items[1]
-        cart.append(item)
+        cart.append(item['name'])
         totalprice += item["price"]
-        print("You added:", item)
+        print("you added:", item)
     elif purchase == "IPad":
         item = best_buy_items[2]
-        cart.append(item)
+        cart.append(item['name'])
         totalprice += item["price"]
-        print("You added:", item)
+        print("you added:", item)
     elif purchase == "continue":
-        print("Purchase another item.")
+        print("purchase another item.")
         continue
     elif purchase == "done":
-        print("Items in cart:")
+        print("items in cart:")
         for item in cart:
             print(item)
-        print("Total price of items:", totalprice)
+        print("total price of items:", totalprice)
         break
     else:
-        print("Item not found.")
+        print("item not found.")
               
 
             
