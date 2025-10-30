@@ -27,8 +27,9 @@ best_buy_items = [
 print(best_buy_items)
 cart = []
 totalprice = 0
+print("Purchase an item: TV, IPhone, or IPad.")
 while best_buy_items:
-    purchase = input("Purchase an item TV, IPhone or IPad")
+    purchase = input("Continue shopping or done?")
     if purchase == "TV":
         item = best_buy_items[0]
         cart.append(item['name'])
@@ -55,12 +56,3 @@ while best_buy_items:
         break
     else:
         print("item not found.")
-              
-
-            
-              
-
-
-
-
-
