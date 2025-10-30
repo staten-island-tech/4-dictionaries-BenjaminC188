@@ -27,8 +27,8 @@ best_buy_items = [
 print(best_buy_items)
 cart = []
 totalprice = 0
-purchase = input("Purchase an item TV, IPhone or IPad")
 while best_buy_items:
+    purchase = input("Purchase an item TV, IPhone or IPad")
     if purchase == "TV":
         item = best_buy_items[0]
         cart.append(item['name'])
