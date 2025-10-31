@@ -21,8 +21,8 @@ best_buy_items = [
 }
 ]
 
-"""for index, item in enumerate(best_buy_items):
-    print(index, ":", item['name'])"""
+for index, item in enumerate(best_buy_items):
+    print(item['name'])
 
 print(best_buy_items)
 cart = []
